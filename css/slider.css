@@ -1,0 +1,87 @@
+/* SLIDER */
+
+:root {
+    --white: #fff;
+    --gris: #222222ff;
+    --gris-texto: #363636ff;
+    --dorado: rgba(177, 153, 22, 0.842);
+    --beish: #440000; 
+}
+
+.container {
+    overflow: hidden;
+}
+
+.novedades {
+    display: flex;
+    box-shadow: 0px 2px 2px 1px rgba(128, 128, 128, 0.562);
+}
+
+.novedades-slider {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 20px;
+    flex-shrink: 0;
+}
+
+.novedades-slider:nth-child(1) {
+    background-image: url("https://static8.depositphotos.com/1177973/882/i/600/depositphotos_8823251-stock-photo-pendant-in-form-of-rings.jpg");
+}
+.novedades-slider:nth-child(2) {
+    background-image: url("https://static1.abc.es/media/summum/2019/04/10/apertura-platino-tiffany-kWeH--620x349@abc.jpg");
+}
+.novedades-slider:nth-child(3) {
+    background-image: url("https://www.maistendencia.com/blog/wp-content/uploads/2021/03/joyeria-vila-ourense-joyas-y-relojes-2.jpg");
+}
+
+
+.novedades-slider div {
+    align-self: flex-end;
+    padding-left: 20px;
+    color: white;
+    height: min-content;
+}
+
+.novedades-slider div h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.novedades-slider div p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 350px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.vermas {
+    font-weight: 200;
+    padding: 10px;
+    width: 150px;
+    color: #363636;
+    font-size: 20px;
+    background-color: #ddd9d9;
+}
+.vermas:hover {
+    cursor: pointer;
+    color: rgb(109, 93, 0);
+}
+
+.slider-btn {
+    background-color: #adadad00;
+    color: white;
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+
+.slider-btn:hover {
+    cursor: pointer;
+}

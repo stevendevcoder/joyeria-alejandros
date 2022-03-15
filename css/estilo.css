@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: rgb(42, 42, 46);
+}   
+
+
+:root {
+    --white: #fff;
+    --gris: #222222ff;
+    --gris-texto: #363636ff;
+    --dorado: rgba(177, 153, 22, 0.842);
+    --beish: #440000; 
+}
+
+.btn {
+    outline: none;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 3px 5px 22px 0px rgba(60,60,60,3);
+    -moz-box-shadow: 3px 5px 22px 0px rgba(60,60,60,3);
+    box-shadow: 3px 5px 22px 0px rgba(60,60,60,3);
+    cursor: pointer;
+}
+  
+.main {
+    background-color: aliceblue;
+    height: auto;
+    padding-bottom: 80px;
+    padding: 40px 40px;
+}
+
+
+.categorias {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+    color: #363639;
+}
+
+.categorias h1 {
+    letter-spacing: 1.5px;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 23px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.categorias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.categoria {
+    border: 0.5px solid rgb(179, 152, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+    height: 230px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categoria:hover {
+    cursor: pointer;
+}
+
+.categorias-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.categorias-btn button{
+    background-color: var(--beish);
+    color: #fff;
+    border: none;
+}
+
+#matrimonio {
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_693175-MCO41426297626_042020-V.webp");
+    
+}
+
+#cadenas {
+    background-image: url("https://m.media-amazon.com/images/I/6176Igx+HhL._AC_UY395_.jpg");
+}
+
+#anillos {
+    background-image: url("https://res.cloudinary.com/glamira/image/upload/c_limit,c_fill,dpr_1.0,f_auto,fl_lossy,q_auto/media/cms/menubuilder/wedding-2017/weddingmenu-men.jpg");
+}
+
+#aretes {
+    background-image: url("https://kevins.com.co/img/productos/0220004030.jpg");
+
+}
+
+#relojes {
+    background-image: url("https://content.rolex.com/dam/2021/upright-bba-with-shadow/m124060-0001.png?imwidth=420");
+}
+
+
+/* FOOOTER */
+
+footer {
+    background: #222222;
+    color: #ffffff;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.redes-sociales {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    padding:  20px 0px 20px 0px;
+    width: 100%;
+}
+
+.redes-sociales h3 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.enlaces-redes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.enlaces-redes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background: white;
+}
+
+.enlaces-redes div img {
+    width: 30px;
+}
+
+.mercado-libre img {
+    width: 80px;
+}
+
+.enlace-wsp {
+    padding: 20px 30px 20px 30px;
+    display: flexbox;
+}
+
+.enlace-wsp h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.btn-wsp {
+    margin: 0 auto;
+    display: inline-flex;
+    background-color: #00b17c;
+    padding: 5px;
+    text-align: center;
+}
+
+.btn-wsp:hover {
+    cursor: pointer;
+}
+
+.btn-wsp p{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.btn-wsp img {
+    width: 30px;
+}

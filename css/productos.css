@@ -1,0 +1,20 @@
+/* productos */
+
+:root {
+    --white: #fff;
+    --gris: #222222ff;
+    --gris-texto: #363636ff;
+    --dorado: rgba(177, 153, 22, 0.842);
+    --beish: #440000; 
+}
+
+.productos {
+    padding: 40px 40px;
+}
+
+.productos>h1 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
