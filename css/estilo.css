@@ -37,6 +37,8 @@ body {
     height: auto;
     padding-bottom: 80px;
     padding: 40px 40px;
+    box-shadow: inset -18px 18px 36px #cccccc,
+            inset 18px -18px 36px #f4f4f4;
 }
 
 
@@ -58,10 +60,13 @@ body {
 
 .categorias-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 20px;
 }
 
 .categoria {
+
     border: 0.5px solid rgb(179, 152, 0);
     display: flex;
     justify-content: center;
@@ -70,7 +75,6 @@ body {
     height: 230px;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 1px;
 
     background-repeat: no-repeat;
     background-size: cover;

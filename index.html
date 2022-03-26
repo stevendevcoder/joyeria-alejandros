@@ -21,6 +21,10 @@
     <body>
         <nav class="menu-navegacion">
             <div class="logo-principal">
+                <a class="hide" href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+
                 <a class="login" href="">
                     <i class="icono-user fas fa-user"></i>
                     Iniciar
@@ -36,10 +40,18 @@
                 </div>
             </div>  
             <div class="enlaces">
-                <button class="nav-toggle"> 
-                    <i class="fas fa-bars"></i>
-                </button>  
-                    <a href="">Cadenas</a>
+                <div class="sec" id="sec-toggle">
+                    <input class="buscador" type="text" placeholder="Buscar un producto..." name="busqueda" id="">
+                </div>
+
+                <ul>
+                    <li><a href="">Cadenas</a></li>
+                    <li><a href="">Aretes</a></li>
+                    <li><a href="">Anillos</a></li>
+                    <li><a href="">Matrimonio</a></li>
+                    <li><a href="">Quienes Somos</a></li>
+                </ul>
+                    <!--a href="">Cadenas</!a>
                     <span class="linea"></span>
                     <a href="">Anillos</a>
                     <span class="linea"></span>
@@ -47,7 +59,7 @@
                     <span class="linea"></span>
                     <a href="">Aretes</a>
                     <span class="linea"></span>
-                    <a href="">Quienes Somos</a>
+                    <a-- href="">Quienes Somos</a-->
             </div> 
         </nav>
 
@@ -159,5 +171,6 @@
         </footer>
 
         <script src="js/index.js"></script>
+        <script src="js/menu.js"></script>
     </body>
 </html>

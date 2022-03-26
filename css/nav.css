@@ -8,13 +8,20 @@
     --beish: #440000; 
 }
 
+.fa-bars {
+    color:#222222ff;
+    display: none;
+}
+
 .menu-navegacion {
     display: grid;
     grid-template-rows: 100px 40px;
 
     background-color: white;
-    box-shadow: 0px 0px 3px 1px rgba(128, 128, 128, 0.562);
+    box-shadow:  -20px 20px 36px #bcbcbc,
+             20px -20px 36px #ffffff;
 }
+
 
 .logo-principal {
     display: grid;
@@ -50,6 +57,9 @@
     width: 100%;
     align-self: center;
 }
+#sec-toggle{
+    display: none;
+}
 
 .buscador {
     border: 1px solid rgb(180, 153, 0);
@@ -59,16 +69,25 @@
 
 .enlaces {
     display: flex;
-
-    width: 100%;
     justify-content: center;
-    justify-items: space-between;
+    width: 100%;
     align-items: center;
-    position: relative;
 
     background-color: var(--beish);
+    z-index: 2;
 }
 
+
+.enlaces ul {
+    display: flex;
+    justify-items: space-between    ;
+}
+
+.enlaces ul li {
+    list-style: none;
+    
+    text-align: center;
+}
 
 .enlaces a {
     font-size: 15spx;
@@ -92,11 +111,94 @@
     transition: 0.6s;
 }
 
-.nav-toggle {
+.hide {
+    display: none;
+
     border: none;
     background: none;
-    font-size: 25px;
+    font-size: 35px;
     line-height: 60px;
-
+}
+#check {
     display: none;
+}
+
+/* Querys */
+
+@media (max-width: 800px){
+    .logo-principal{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+
+    }
+    .logo {
+        grid-row: 1;
+    }
+    .login {
+        grid-row: 2;
+    }
+    .sec {
+        display: none;
+    }
+    #sec-toggle {
+        display: block;
+    }
+    #sec-toggle input {
+        width: 100%;
+        height: 70px;
+        padding: 20px;
+        border-radius: 0px;
+        border: none;
+    }
+    .hide {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        border: none;
+        text-decoration: none;
+        background: none;
+    }
+
+    .hide i {
+        display: block;
+        color: var(--beish);
+    }
+
+    .enlaces {
+        flex-direction: column;
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        top: 0px;
+        left: -100%;
+    }
+
+    .enlaces ul {
+        display: flex;
+        flex-direction: column;
+
+        
+        width: 100%;
+        height: 100vh;
+    }
+    .enlaces ul li {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-bottom: 0.5px solid black;
+        align-items: center;
+        justify-content: center;
+    }
+    .enlaces ul li:hover{
+        background-color: #4400006e;
+    }
+    .container {
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 685px){
+    
 }
