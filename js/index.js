@@ -5,7 +5,6 @@ var main = document.querySelector('.main');
 
 //main.style.setProperty("margin-top",`${sizeNav}px`);
 
-
 let slider = document.querySelector(".novedades");
 let sliderIndividual =  document.querySelectorAll(".novedades-slider");
 let width = sliderIndividual[0].clientWidth;

@@ -6,6 +6,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     background-color: rgb(42, 42, 46);
 }   
 
@@ -36,7 +37,6 @@ body {
     background-color: aliceblue;
     height: auto;
     padding-bottom: 80px;
-    padding: 40px 40px;
     box-shadow: inset -18px 18px 36px #cccccc,
             inset 18px -18px 36px #f4f4f4;
 }
@@ -121,87 +121,3 @@ body {
 }
 
 
-/* FOOOTER */
-
-footer {
-    background: #222222;
-    color: #ffffff;
-}
-
-.contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.redes-sociales {
-    display: grid;
-    justify-content: center;
-    align-items: flex-start;
-    padding:  20px 0px 20px 0px;
-    width: 100%;
-}
-
-.redes-sociales h3 {
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.enlaces-redes {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.enlaces-redes div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; 
-    background: white;
-}
-
-.enlaces-redes div img {
-    width: 30px;
-}
-
-.mercado-libre img {
-    width: 80px;
-}
-
-.enlace-wsp {
-    padding: 20px 30px 20px 30px;
-    display: flexbox;
-}
-
-.enlace-wsp h4 {
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-
-.btn-wsp {
-    margin: 0 auto;
-    display: inline-flex;
-    background-color: #00b17c;
-    padding: 5px;
-    text-align: center;
-}
-
-.btn-wsp:hover {
-    cursor: pointer;
-}
-
-.btn-wsp p{
-    font-size: 20px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-}
-
-.btn-wsp img {
-    width: 30px;
-}

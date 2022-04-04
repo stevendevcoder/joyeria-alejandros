@@ -12,6 +12,7 @@
     width: 100%;
     display: grid;
     color: #363636;
+    margin-bottom: 80px;
 }
 
 .caja-texto {
@@ -19,8 +20,6 @@
     padding: 100px 30px 100px 30px;
 }
 
-.texto {
-}
 
 .texto h3 {
     font-size: 20px;
@@ -39,16 +38,25 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.experiencia #exp1 .imagen {
+.imagen {
     width: 100%;
-    background-image: url("https://anamaria.pe/wp-content/uploads/2021/12/Blog-2-main-image.jpg");
+    height: 350px;
+
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.experiencia #exp1 .imagen {
+    background-image: url("https://anamaria.pe/wp-content/uploads/2021/12/Blog-2-main-image.jpg");
+}
+
 .experiencia #exp2 .imagen {
-    width: 100%;
     background-image: url("https://cdn0.matrimonio.com.co/usr/4/6/9/6/cfb_2x_184837.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+@media (max-width: 550px) {
+    .experiencia section   {
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
